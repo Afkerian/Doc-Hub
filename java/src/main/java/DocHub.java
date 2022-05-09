@@ -16,6 +16,5 @@ public class DocHub extends TelegramLongPollingBot {
     @Override
     public void onUpdateReceived(Update update) {
 
-
     }
 }
