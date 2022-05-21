@@ -40,7 +40,7 @@ public class Handlers {
     private static SendMessage coincidenceBookCommand(Update update){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(update.getMessage().getFrom().getId().toString());
-        sendMessage.setText("Aqui tienes una lista "update.getMessage().getFrom().getFirstName()+" de los libros" +
+        sendMessage.setText("Aqui tienes una lista "+update.getMessage().getFrom().getFirstName()+" de los libros" +
                 "que te pueden interesar, por favor ingresa el codigo que se encuentra junto al libro que desees.\n\n");
         return sendMessage;
     }
