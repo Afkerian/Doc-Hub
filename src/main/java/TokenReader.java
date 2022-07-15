@@ -8,7 +8,7 @@ public class TokenReader {
     public static String readUserName (){
         String salida = "";
         try {
-            BufferedReader buffer = new BufferedReader(new FileReader("userNameDocHub.secret"));
+            BufferedReader buffer = new BufferedReader(new FileReader("userNamePoliHub.secret"));
             salida = buffer.readLine();
             buffer.close();
         }catch (FileNotFoundException e){
@@ -23,7 +23,7 @@ public class TokenReader {
     public static String readToken (){
         String salida = "";
         try {
-            BufferedReader buffer = new BufferedReader(new FileReader("tokenDocHub.secret"));
+            BufferedReader buffer = new BufferedReader(new FileReader("tokenPoliHub.secret"));
             salida = buffer.readLine();
             buffer.close();
 
